@@ -14,5 +14,8 @@
         "default_popup": "index.html",
         "default_title": "A handy tool to take notes."
     },
-    "permissions": ["activeTab"]
+    "permissions": [
+        "activeTab",
+        "https://www.googleapis.com/"
+    ]
 }
