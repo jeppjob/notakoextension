@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Notako | Your sticky notes</title>
+  </head>
+  <body>
+    <header>
+      
+      <time id="time"></time><date id="date"></date>
+      <h1>
+        <span>Hello</span>
+        <span id="name" contenteditable="true"><strong></strong></span>
+      </h1>
+      <p>Use <code>[CTRL+ENTER]</code> to take a copy of the notes, <code>[CTRL+ALT+BACKSPACE]</code> to clear the current note fields and <code>[CTRL+ALT+R]</code> to reset your settings.</p>
+    </header>
+    <section class="container">
+      <div class="main-notes-container">
+        <div class="main-notes-header">
+          <h3 class="main-title" contenteditable="true" data-text="Title..." aria-placeholder="Title"></h3>
+          <span class="clear-notes"><i class="fas fa-redo-alt"></i></span>
+          <span class="save-notes"><i class="fas fa-plus"></i>
+          </span>
+        </div>
+        <div class="main-notes" contenteditable="true" data-text="Notes..." aria-placeholder="Notes"></div>
+      </div>
+      <div id="notes-area" class="notes-area"></div>
+    </section>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
